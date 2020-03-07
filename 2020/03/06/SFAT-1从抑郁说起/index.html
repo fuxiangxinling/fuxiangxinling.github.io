@@ -15,7 +15,7 @@
     <meta name="description" content="这篇文章最初成稿于2019年10月22日，当时是因为偶然看到了英国记者约翰·哈里（Johann Hari）的著作《Lost Connections: Uncovering the Real Causes of Depression—and the Unexpected Solutions》，书中的观点与我指导家庭的理念如此地不谋而合，让我突然对自己的指导理论有了更为清晰的认识，也让我有信心和动力把">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SFAT-1从抑郁说起">
-<meta property="og:url" content="http://yoursite.com/2020/03/06/SFAT-1%E4%BB%8E%E6%8A%91%E9%83%81%E8%AF%B4%E8%B5%B7/index.html">
+<meta property="og:url" content="http://fuxiangxinling.com/2020/03/06/SFAT-1%E4%BB%8E%E6%8A%91%E9%83%81%E8%AF%B4%E8%B5%B7/index.html">
 <meta property="og:site_name" content="馥香心灵-基于系统的家庭调整理论">
 <meta property="og:description" content="这篇文章最初成稿于2019年10月22日，当时是因为偶然看到了英国记者约翰·哈里（Johann Hari）的著作《Lost Connections: Uncovering the Real Causes of Depression—and the Unexpected Solutions》，书中的观点与我指导家庭的理念如此地不谋而合，让我突然对自己的指导理论有了更为清晰的认识，也让我有信心和动力把">
 <meta property="og:locale" content="zh_CN">
@@ -215,7 +215,7 @@
 
 
 
-    <a data-url="http://yoursite.com/2020/03/06/SFAT-1%E4%BB%8E%E6%8A%91%E9%83%81%E8%AF%B4%E8%B5%B7/" data-id="ck7huv1ou0000lswp6ayq2oaf" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://fuxiangxinling.com/2020/03/06/SFAT-1%E4%BB%8E%E6%8A%91%E9%83%81%E8%AF%B4%E8%B5%B7/" data-id="ck7hv52m90000b0wpe2bl3ojv" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -286,13 +286,13 @@
             "name": "Fuxiang"
         },
         "headline": "SFAT-1从抑郁说起",
-        "image": "http://yoursite.com",
+        "image": "http://fuxiangxinling.com",
         "keywords": "理论原创",
         "genre": "",
         "datePublished": "2020-03-06",
         "dateCreated": "2020-03-06",
         "dateModified": "2020-03-07",
-        "url": "http://yoursite.com/2020/03/06/SFAT-1从抑郁说起/",
+        "url": "http://fuxiangxinling.com/2020/03/06/SFAT-1从抑郁说起/",
         "description": "这篇文章最初成稿于2019年10月22日，当时是因为偶然看到了英国记者约翰·哈里（Johann Hari）的著作《Lost Connections: Uncovering the Real Causes of Depression—and the Unexpected Solutions》，书中的观点与我指导家庭的理念如此地不谋而合，让我突然对自己的指导理论有了更为清晰的认识，也让我有信心和动力把",
         "wordCount": 86
     }
@@ -303,9 +303,8 @@
     <section id="comments">
     
         
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
-    </div>
+    <!-- Valine -->
+    <div class="vcomments"></div>
 
 
     
@@ -441,19 +440,25 @@
 
         
     
+    <script src="//unpkg.com/valine"></script>
     <script>
-    var disqus_shortname = 'hexo-theme-hueman';
-    
-    
-    var disqus_url = 'http://yoursite.com/2020/03/06/SFAT-1%E4%BB%8E%E6%8A%91%E9%83%81%E8%AF%B4%E8%B5%B7/';
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+        var GUEST = ['nick','mail','link'];
+        var meta = '';
+        meta = meta.split(',').filter(function (item) {
+            return GUEST.indexOf(item)>-1;
+        });
+        var avatarcdn = 'https://gravatar.loli.net/avatar/' == true;
+        new Valine({
+            el: '.vcomments',
+            notify: "",
+            verify: "",
+            appId: "KJs7qa6l84GrehThWaPzaoTe-gzGzoHsz",
+            appKey: "4ASA2JmntgKrwTeWAiS5SMmG",
+            placeholder: "留言板",
+            avatar:"identicon",
+            recordIP:"",
+            visitor: "true"
+        });
     </script>
 
 

@@ -13,7 +13,7 @@
     <meta name="description" content="陪伴女儿三年休学 两年半复学, 经历弯路和痛苦, 发现问题家庭有规律可寻; 结合亲证和指导经验,提出了 基于系统的家庭调整理论; 愿我来自心底的分享，可以协助到有缘的你获得心灵的自由和家庭的幸福">
 <meta property="og:type" content="website">
 <meta property="og:title" content="馥香心灵-基于系统的家庭调整理论">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://fuxiangxinling.com/archives/index.html">
 <meta property="og:site_name" content="馥香心灵-基于系统的家庭调整理论">
 <meta property="og:description" content="陪伴女儿三年休学 两年半复学, 经历弯路和痛苦, 发现问题家庭有规律可寻; 结合亲证和指导经验,提出了 基于系统的家庭调整理论; 愿我来自心底的分享，可以协助到有缘的你获得心灵的自由和家庭的幸福">
 <meta property="og:locale" content="zh_CN">
@@ -320,17 +320,25 @@
 
         
     
+    <script src="//unpkg.com/valine"></script>
     <script>
-    var disqus_shortname = 'hexo-theme-hueman';
-    
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+        var GUEST = ['nick','mail','link'];
+        var meta = '';
+        meta = meta.split(',').filter(function (item) {
+            return GUEST.indexOf(item)>-1;
+        });
+        var avatarcdn = 'https://gravatar.loli.net/avatar/' == true;
+        new Valine({
+            el: '.vcomments',
+            notify: "",
+            verify: "",
+            appId: "KJs7qa6l84GrehThWaPzaoTe-gzGzoHsz",
+            appKey: "4ASA2JmntgKrwTeWAiS5SMmG",
+            placeholder: "留言板",
+            avatar:"identicon",
+            recordIP:"",
+            visitor: "true"
+        });
     </script>
 
 
